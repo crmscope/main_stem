@@ -1,0 +1,43 @@
+{
+  "accounts": {
+    "id": {
+      "type": "char",
+      "observe": {
+        "read": [
+          "readAcc"
+        ],
+        "write": [
+          "writeAcc"
+        ]
+      }
+    },
+    "name": {
+      "type": "char"
+    },
+    "date_entered": {
+      "type": "char"
+    },
+    "date_modified": {
+      "type": "char"
+    },
+    "modified_user_id": {
+      "type": "char"
+    },
+    "created_by": {
+      "type": "char"
+    }
+  },
+  "accounts_cstm": {
+    "id_c": "char",
+    "jjwg_maps_lng_c": "float",
+    "jjwg_maps_lat_c": "float"
+  },
+  "links": {
+    "accounts_users": {
+      "type": "one_to_one",
+      "entity": "users",
+      "prefix": "u1",
+      "on": "id "
+    }
+  }
+}

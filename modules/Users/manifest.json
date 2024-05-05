@@ -1,0 +1,20 @@
+{
+  "users": {
+    "id": {
+      "type": "char"
+    },
+    "user_name": "varchar",
+    "date_entered": "datetime",
+    "date_modified": "datetime",
+    "modified_user_id": "char",
+    "created_by": "char"
+  },
+  "users_cstm": {
+    "id_c": "char",
+    "jjwg_maps_lng_c": "float",
+    "jjwg_maps_lat_c": "float"
+  },
+
+}
+
+
